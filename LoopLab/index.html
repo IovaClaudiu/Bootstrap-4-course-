@@ -396,11 +396,11 @@
 
       // Init scroll spy
       $("body").scrollspy({
-        target: "#main-nav"
+        target: "#main-nav",
       });
 
       // Smooth scroll
-      $("#main-nav a").on("click", function(e) {
+      $("#main-nav a").on("click", function (e) {
         if (this.hash !== "") {
           e.preventDefault();
 
@@ -408,10 +408,10 @@
 
           $("html, body").animate(
             {
-              scrollTop: $(hash).offset().top
+              scrollTop: $(hash).offset().top,
             },
             800,
-            function() {
+            function () {
               window.location.hash = hash;
             }
           );
